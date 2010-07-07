@@ -157,6 +157,17 @@
 
 ## Como Teambox ##
 
+!SLIDE smaller
+# jquery-ujs/rails.js #
+
+    @@@ javascript
+    /* confirmation */
+    $('a[data-confirm],input[data-confirm]').live('click', function ()
+    /* remote */
+    $('form[data-remote]').live('submit', function ());
+    $('a[data-remote],input[data-remote]').live('click', function ());
+    $('a[data-method]:not([data-remote])').live('click', function ());
+
 !SLIDE smbullets incremental smaller
 # Faltan cosinas ¿? #
 
@@ -178,10 +189,12 @@
 
 ## Si quieres pasar otros callbacks ya te lo tienes que currar con puro javascript  ##
 
-* :loading
-* :success
-* :failure
-* :complete
+### custom events ###
+
+* ajax:loading
+* ajax:success
+* ajax:failure
+* ajax:complete
 
 ## http://www.simonecarletti.com/blog/2010/06/unobtrusive-javascript-in-rails-3/ ##
 
