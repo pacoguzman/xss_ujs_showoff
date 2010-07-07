@@ -82,6 +82,28 @@
       def range_field_tag(name, value = nil, options = {}); ...; end
     end
 
+!SLIDE code smaller
+# HTML5 helpers #
+
+    @@@ruby
+    module ActionView::Helpers::AssetTagHelper
+      #   <%= favicon_link_tag %>
+      #   <link href="/favicon.ico?4649789979" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+      def favicon_link_tag(source='/favicon.ico', options={}); ...; end
+
+      def video_path(source); ...; end
+
+      def audio_path(source); ...; end
+
+      #  video_tag("trailer")  # =>
+      #    <video src="/videos/trailer" />
+      def video_tag(sources, options = {}); ...; end
+
+      #  audio_tag("sound")  # =>
+      #    <audio src="/audios/sound" />
+      def audio_tag(source, options = {}); ...; end
+    end
+
 !SLIDE code
 # Error Messages Deprecated #
 
