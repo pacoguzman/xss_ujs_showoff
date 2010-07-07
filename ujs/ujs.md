@@ -167,6 +167,8 @@
     $('form[data-remote]').live('submit', function ());
     $('a[data-remote],input[data-remote]').live('click', function ());
     $('a[data-method]:not([data-remote])').live('click', function ());
+    $(disable_with_form_selector).live('ajax:before', function());
+    $(disable_with_form_selector).live('ajax:complete', function());
 
 !SLIDE smbullets incremental smaller
 # Faltan cosinas ¿? #
