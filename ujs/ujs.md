@@ -157,13 +157,35 @@
 
 ## Como Teambox ##
 
-!SLIDE smaller
+!SLIDE smbullets incremental smaller
 # Faltan cosinas ¿? #
 
+## Deprecated methods ##
+
+* link_to_remote (*)
+* remote_form_for (*)
+* observe_field
+* observe_form
+* form_remote_tag (*)
+* button_to_remote
+* submit_to_remote (*)
+* link_to_function
+* periodically_call_remote
+
+## (*) partially supported using the :remote => true option ##
+
+!SLIDE smbullets smaller
+
 ## Si quieres pasar otros callbacks ya te lo tienes que currar con puro javascript  ##
+
+* :loading
+* :success
+* :failure
+* :complete
+
 ## http://www.simonecarletti.com/blog/2010/06/unobtrusive-javascript-in-rails-3/ ##
 
-# [Vamos a verlo!](http://github.com/rails/jquery-ujs/blob/master/src/rails.js "jquery-ujs") #
+# [Vamos a verlo!](http://www.simonecarletti.com/blog/2010/06/unobtrusive-javascript-in-rails-3/ "unobtrusive javascript in rails 3") #
 
 !SLIDE
 # Resources
